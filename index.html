@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vectora Engineering Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">V</span><span>VECTORA</span></div>
+      <div class="sidebar-label">WORKBENCH</div>
+      <nav id="nav-list" aria-label="Calculator modules"></nav>
+      <div class="sidebar-footer"><span class="status-dot"></span> ENGINE READY <span class="version">v1.0</span></div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div><div class="breadcrumb">ENGINEERING / <span id="crumb">OHM'S LAW</span></div><h1 id="page-title">Ohm's law</h1></div>
+        <div class="top-actions"><button class="icon-button" id="clear-all" title="Clear all fields" aria-label="Clear all fields">↺</button><button class="toolbar-button" id="save-project" title="Save scenario">Save</button><button class="toolbar-button" id="compare-project" title="Compare saved scenarios">Compare</button><button class="toolbar-button" id="export-json" title="Export JSON">JSON</button><button class="toolbar-button" id="export-csv" title="Export CSV">CSV</button><button class="toolbar-button" id="export-svg" title="Export diagram SVG">SVG</button><button class="toolbar-button" id="print-project" title="Print or save as PDF">PDF</button><select class="unit-select" id="unit-system" aria-label="Unit system"><option value="si">SI</option><option value="imperial">Imperial</option></select></div>
+      </header>
+
+      <section class="workspace">
+        <div class="intro-row"><div><p class="eyebrow" id="module-index">MODULE 01 / ELECTRICAL</p><p class="intro-copy" id="module-description">Solve for voltage, current, resistance, or power.</p></div><div class="formula-display" id="formula-display">V = I × R</div></div>
+        <div id="calculator-root"></div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
